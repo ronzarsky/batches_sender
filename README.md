@@ -13,14 +13,14 @@
 
 - Basic data structures:
   - Requests queue
-    - producer context: http request handler
+    - producer context: http request handler thread
     - consumer context: execution process
   - Response batch queue:
     - producer context: execution process
     - consumer context: main process dedicated thread  
   - Response "per source queue" 
     - producer context: main process dedicated thread  
-    - consumer context: http request handler  
+    - consumer context: http request handler thread 
  
 - Basic modules:
   - main (main process)
